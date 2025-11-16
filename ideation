@@ -7,8 +7,10 @@ Technical Feasibility: ✅ Very Easy
 This is actually trivial from a technical standpoint:
 
 // Literally the core functionality:
+0. Check if user is using their phone - screen on, screen unlocked
 1. Read contacts (READ_CONTACTS permission)
 2. Filter to contacts with phone numbers
+2.2 Filter for contacts not on the block list
 3. Pick random contact
 4. Intent to dial/call (CALL_PHONE permission)
 Development time: 1-2 weeks for a complete MVP (seriously)
@@ -30,9 +32,8 @@ Pros:
 ✅ Social/mental health angle - Combat isolation, encourage connection
 
 Cons:
-❌ Very limited functionality - It's essentially one button
+
 ❌ Unclear monetization - Hard to charge for this
-❌ Low retention - How often would people use it?
 ❌ Niche appeal - Who actually wants random calls?
 ❌ One-trick pony - Not much to build on
 ❌ Competitive moat - Anyone could clone this in a day
@@ -46,6 +47,15 @@ Lonely people wanting to talk
 People in "social debt" who feel bad about not calling friends
 Fun/novelty seekers
 Potential problems:
+
+What makes if fun and special: screen shows conversation prompts when it is dialing/connected.
+Could bring up recent or notable social media posts of the person being called so that you have something to talk about.
+
+Normal app allows 3-5 max blacklisted contacts
+Monetization: $5-$10 version allows for 10-15 blacklisted contacts.
+Marketing> need a better name than "blacklisted"
+Needs a fun name and graphics for the app. Super minimal.
+
 
 Calling at bad times (middle of night, work hours)
 Calling people you don't want to talk to (ex, estranged family)
